@@ -1,5 +1,5 @@
 {
-  "name": "password-strength-checker",
+  "name": "check-the-password-strength",
   "version": "1.0.0",
   "description": "A lightweight npm package written in TypeScript that provides a simple yet effective way to check the strength of passwords.",
   "main": "lib/index.js",
