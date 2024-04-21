@@ -1,0 +1,33 @@
+{
+  "name": "password-strength-checker",
+  "version": "1.0.0",
+  "description": "A lightweight npm package written in TypeScript that provides a simple yet effective way to check the strength of passwords.",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saadnaeem453/Password-Strength-Checker.git"
+  },
+  "keywords": [
+    "password strength checker",
+    "password strength",
+    "password checker",
+    "check the strength of password"
+  ],
+  "author": "Saad_Naeem <jsaad3663@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saadnaeem453/Password-Strength-Checker/issues"
+  },
+  "homepage": "https://github.com/Saadnaeem453/Password-Strength-Checker#readme.md",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
