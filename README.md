@@ -19,4 +19,4 @@ A lightweight npm package written in TypeScript that provides a simple yet effec
 Install the package via npm:
 
 ```bash
-npm install password-strength-checker
+npm i check-the-password-strength
