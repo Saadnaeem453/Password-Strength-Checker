@@ -19,22 +19,17 @@ export class PasswordStrengthChecker {
         const hasSpecialChar = /[!@#$%^&*()-_=+{}[\]|;:'",.<>?`~]/.test(password);
 
         let strength: string;
-        let color: string;
 
         if (!hasAlphabet || !hasDigit || !hasSpecialChar) {
             strength = PasswordStrength.Weak;
-            color = "\x1b[31m"; // Red color
         } else if (password.length < 8) {
             strength = PasswordStrength.Moderate;
-            color = "\x1b[33m"; // Yellow color
         } else {
             strength = PasswordStrength.Strong;
-            color = "\x1b[32m"; // Green color
         }
 
-        const resetColor = "\x1b[0m"; // Reset color to default
 
-        return `${color}Password is ${strength}${resetColor}`;
+        return `$Password is ${strength}`;
     }
 }
 

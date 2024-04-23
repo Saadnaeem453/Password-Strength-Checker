@@ -6,6 +6,7 @@ A lightweight npm package written in TypeScript that provides a simple yet effec
 
 ## Features
 
+
 - **Password Strength Assessment**: Determine whether a password is weak, moderate, or strong based on customizable criteria such as length, character types, and complexity.
   
 - **Color-Coded Feedback**: Returns a color code indicating the strength of the password, allowing easy integration with user interfaces to provide visual feedback to users.
@@ -18,5 +19,14 @@ A lightweight npm package written in TypeScript that provides a simple yet effec
 
 Install the package via npm:
 
-```bash
+<!-- Bash -->
+
 npm i check-the-password-strength
+
+
+## Example Usage 
+
+const password = 'MySecurePassword123';
+const strength = PasswordStrengthChecker.checkPasswordStrength(password);
+
+
