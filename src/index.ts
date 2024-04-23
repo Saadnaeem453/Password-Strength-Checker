@@ -20,7 +20,7 @@ export class PasswordStrengthChecker {
 
         let strength: string;
 
-        if (!hasAlphabet || !hasDigit || !hasSpecialChar) {
+        if (!hasAlphabet || !hasDigit || !hasSpecialChar || password.length < 8) {
             strength = PasswordStrength.Weak;
         } else if (password.length < 8) {
             strength = PasswordStrength.Moderate;
@@ -29,7 +29,7 @@ export class PasswordStrengthChecker {
         }
 
 
-        return `$Password is ${strength}`;
+        return `Password is ${strength}`;
     }
 }
 
